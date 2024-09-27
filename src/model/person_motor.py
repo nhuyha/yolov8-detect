@@ -7,9 +7,15 @@ import os
 # Load YOLOv8 model
 model = YOLO('yolov8s.pt')
 
+input_path = os.path.join(".\\data\\input")
+output_path = os.path.join(".\\data\\output")
+
 # Path to your video file
-video_path = "D:/1/Hacka/project/input.mp4"
+video_path = os.path.join(input_path,"input.mp4")
 cap = cv2.VideoCapture(video_path)
+
+# from IPython import embed
+# embed()
 
 # Check if the video was successfully opened
 if not cap.isOpened():
