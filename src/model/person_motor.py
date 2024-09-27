@@ -2,6 +2,8 @@ import cv2
 from ultralytics import YOLO
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
+import os
+
 # Load YOLOv8 model
 model = YOLO('yolov8s.pt')
 
